@@ -1,0 +1,108 @@
+\documentclass[a4paper,10pt,twocolumn,oneside]{article}
+\setlength{\columnsep}{10pt}
+\setlength{\columnseprule}{0pt}
+
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage[x11names]{xcolor}
+
+\topmargin=0pt
+\headsep=5pt
+\textheight=780pt
+\footskip=0pt
+\voffset=-40pt
+\textwidth=545pt
+\marginparsep=0pt
+\marginparwidth=0pt
+\marginparpush=0pt
+\oddsidemargin=0pt
+\evensidemargin=0pt
+\hoffset=-42pt
+
+\lstset{
+  language=C++,
+  basicstyle=\normalsize\ttfamily,
+  %numbers=left,
+  numberstyle=\footnotesize,
+  stepnumber=1,
+  numbersep=5pt,
+  backgroundcolor=\color{white},
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  frame=false,
+  tabsize=2,
+  captionpos=b,
+  breaklines=true,
+  breakatwhitespace=false,
+  escapeinside={\%*}{*)},
+  morekeywords={constexpr},
+  keywordstyle=\bfseries\color{Blue1},
+  commentstyle=\itshape\color{Red4},
+  stringstyle=\itshape\color{Green4},
+}
+
+\begin{document}
+\pagestyle{fancy}
+\fancyfoot{}
+\fancyhead[L]{National Taiwan University S@OAO!}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\contentsname}{Contents}
+
+\scriptsize
+\tableofcontents
+
+\section{Basic}
+\subsection{vimrc}
+\lstinputlisting{Basic/vimrc.cpp}
+\subsection{shell script.cpp}
+\lstinputlisting{Basic/shell_script.cpp}
+\subsection{init}
+\lstinputlisting{Basic/init.cpp}
+
+\section{Graph}
+\subsection{kosaraju}
+\lstinputlisting{Graph/kosaraju.cpp}
+\subsection{MCMF}
+\lstinputlisting{Graph/MCMF.cpp}
+\subsection{dijkstra}
+\lstinputlisting{Graph/dijkstra.cpp}
+\subsection{tarjan}
+\lstinputlisting{Graph/tarjan.cpp}
+
+\section{Data Structure}
+\subsection{DSU}
+\lstinputlisting{Data_structure/DSU.cpp}
+\subsection{BIT}
+\lstinputlisting{Data_structure/BIT.cpp}
+\subsection{LCT}
+\lstinputlisting{Data_structure/LCT.cpp}
+
+\section{Math}
+\subsection{simplex}
+\lstinputlisting{Math/simplex.cpp}
+\subsection{fraction}
+\lstinputlisting{Math/fraction.cpp}
+\subsection{mobius sequence and linear sieve}
+\lstinputlisting{Math/mobius_sequence.cpp}
+\subsection{miller rabin}
+\lstinputlisting{Math/miller_rabin.cpp}
+\subsection{pollard rho}
+\lstinputlisting{Math/pollard_rho.cpp}
+\subsection{mod inverse}
+\lstinputlisting{Math/mod_inverse.cpp}
+
+\section{String}
+\subsection{lexicographically smallest rotation}
+\lstinputlisting{String/lexicographically_smallest_rotation.cpp}
+
+\section{Other}
+\subsection{fast clear array}
+\lstinputlisting{Other/fast_clear_array.cpp}
+\subsection{priority queue}
+\lstinputlisting{Other/priority_queue.cpp}
+\subsection{fast multiplication}
+\lstinputlisting{Other/mod_multiplication.cpp}
+
+\end{document}
