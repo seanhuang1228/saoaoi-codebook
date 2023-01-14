@@ -33,7 +33,7 @@ docker start $CONTAINER_NAME
 
 Make sure that the container is running, then run
 ```
-docker exec --it -w /data $CONTAINER_NAME /bin/bash
+docker exec -it -w /data $CONTAINER_NAME /bin/bash
 ```
 to get into the container. Then run
 ```
