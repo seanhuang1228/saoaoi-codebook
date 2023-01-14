@@ -8,7 +8,6 @@ on: [push]
 
 env:
  BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
-
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
@@ -23,7 +22,8 @@ jobs:
         run: |
           cd src
           xelatex main.tex
-          cp main.pdf ../pdf/codebook.pdf
+          cd ..
+          cp src/main.pdf pdf/codebook.pdf
       - name: Trust Directory
         run: |
           git config --global --add safe.directory ${GITHUB_WORKSPACE}
