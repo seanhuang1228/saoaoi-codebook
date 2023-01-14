@@ -21,8 +21,9 @@ jobs:
           fetch-depth: 0
       - name: Main Compile Script
         run: |
+          cd src
           xelatex main.tex
-          cp main.pdf pdf/codebook.pdf
+          cp main.pdf ../pdf/codebook.pdf
       - name: Trust Directory
         run: |
           git config --global --add safe.directory ${GITHUB_WORKSPACE}
