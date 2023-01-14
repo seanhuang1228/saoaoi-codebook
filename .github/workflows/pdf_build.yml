@@ -23,6 +23,7 @@ jobs:
           cd src
           xelatex main.tex
           cd ..
+          mkdir pdf
           cp src/main.pdf pdf/codebook.pdf
       - name: Trust Directory
         run: |
