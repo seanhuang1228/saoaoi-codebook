@@ -40,10 +40,3 @@ to get into the container. Then run
 xelatex main.tex
 ```
 to build.
-
-## TODO LIST
-
-- [x] Doing
-- [ ] No one is doing
-- [x] Treap
-- [ ] Sparse Table
